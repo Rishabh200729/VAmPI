@@ -111,9 +111,6 @@ paths:
                         email:
                           type: string
                           example: 'mail1@mail.com'
-                        password:
-                          type: string
-                          example: 'pass1'
                         username:
                           type: string
                           example: 'name1'
