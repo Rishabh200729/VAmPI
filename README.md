@@ -21,7 +21,7 @@ A quick rundown of the actions included can be seen in the following table:
 
 | **Action** |            **Path**           |                     **Details**                    |
 |:----------:|:-----------------------------:|:--------------------------------------------------:|
-|     GET    |           /createdb           | Creates and populates the database with dummy data |
+|     GET    |           /createdb           | Initializes the database and seeds it when empty |
 |     GET    |               /               |                     VAmPI home                     |
 |     GET    |               /me             |           Displays the user that is logged in       |
 |     GET    |           /users/v1           |      Displays all users with basic information     |
@@ -92,7 +92,7 @@ If you would like to alter the timeout of the token created after login or if yo
 
 ## Frequently asked questions
  - **There is a database error upon reaching endpoints!**
-   - Make sure to issue a request towards the endpoint `/createdb` in order to populate the database.
+   - Issue a request to `/createdb` to create missing tables and seed an empty database.
 
  [Picture from freepik - www.freepik.com](https://www.freepik.com/vectors/party)
 

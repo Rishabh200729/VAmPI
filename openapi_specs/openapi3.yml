@@ -17,12 +17,12 @@ paths:
     get:
       tags:
         - db-init
-      summary: Creates and populates the database with dummy data
-      description: Creates and populates the database with dummy data
+      summary: Initializes the database and seeds it when empty
+      description: Creates missing tables and seeds dummy data only when the database has no users
       operationId: api_views.main.populate_db
       responses:
         '200':
-          description: Creates and populates the database with dummy data
+          description: Initializes missing tables and seeds dummy data only when the database has no users
           content:
             application/json:
               schema:
